@@ -24,3 +24,16 @@ adduser --force-badname AleRag
 ls -l /home
 ```
 ![homedir](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/homedir.PNG?raw=true)
+
+```
+sudo groupadd IT
+sudo groupadd Management
+sudo groupadd Accounting
+sudo groupadd Manufacturing
+```
+![groupadd](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/groupadd.PNG?raw=true)
+
+```
+sudo usermod -a -G groupname username
+```
+![]()
