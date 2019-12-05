@@ -19,3 +19,8 @@ nano /etc/hostname
 adduser --force-badname AleRag
 ```
 ![adduser](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/adduser.PNG?raw=true)
+
+```
+ls -l /home
+```
+![homedir](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/homedir.PNG?raw=true)
