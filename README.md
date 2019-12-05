@@ -77,6 +77,72 @@ nano /etc/ssh/sshd_config
 ```
 systemctl restart sshd
 
+nano /etc/apt/sources.list
+```
+![packages](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/packages.PNG?raw=true)
+
+```
+apt-get update
+apt-get upgrade
+
+dpkg-reconfigure dash
+#NO
+
+apt-get -y install ntp
+
+apt-get -y install postfix postfix-mysql postfix-doc mariadb-client mariadb-server openssl getmail4 rkhunter binutils dovecot-imapd dovecot-pop3d dovecot-mysql dovecot-sieve dovecot-lmtpd sudo
+
+#Internet Site
+#server1.iv.local
+
+mysql_secure_installation
+#y
+#123
+#123
+#yx4
+
+nano /etc/postfix/master.cf
+```
+![](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/postfix.PNG?raw=true)
+![](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/postfix2.PNG?raw=true)
+
+
+```
+systemctl restart postfix
+
+nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+![](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/50-servercnf.PNG?raw=true)
+
+```
+echo "update mysql.user set plugin = 'mysql_native_password' where user='root';" | mysql -u root
+
+nano /etc/mysql/debian.cnf
+```
+![](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/mysqldebiancnf.PNG?raw=true)
+
+```
+nano /etc/security/limits.conf
+
+#a botninn adda
+mysql soft nofile 65535
+mysql hard nofile 65535
+
+mkdir -p /etc/systemd/system/mysql.service.d/
+
+nano /etc/systemd/system/mysql.service.d/limits.conf
+```
+[](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/limits.PNG?raw=true)
+
+```
+systemctl daemon-reload
+systemctl restart mariadb
+
+apt-get install amavisd-new spamassassin clamav clamav-daemon unzip bzip2 arj nomarch lzop cabextract p7zip p7zip-full unrar lrzip apt-listchanges libnet-ldap-perl libauthen-sasl-perl clamav-docs daemon libio-string-perl libio-socket-ssl-perl libnet-ident-perl zip libnet-dns-perl libdbd-mysql-perl postgrey
+
+systemctl stop spamassassin
+systemctl disable spamassassin
+
 apt-get -y install apache2 apache2-doc apache2-utils libapache2-mod-php php7.3 php7.3-common php7.3-gd php7.3-mysql php7.3-imap php7.3-cli php7.3-cgi libapache2-mod-fcgid apache2-suexec-pristine php-pear mcrypt  imagemagick libruby libapache2-mod-python php7.3-curl php7.3-intl php7.3-pspell php7.3-recode php7.3-sqlite3 php7.3-tidy php7.3-xmlrpc php7.3-xsl memcached php-memcache php-imagick php-gettext php7.3-zip php7.3-mbstring memcached libapache2-mod-passenger php7.3-soap php7.3-fpm php7.3-opcache php-apcu
 
 a2enmod suexec rewrite ssl actions include dav_fs dav auth_digest cgi headers actions proxy_fcgi alias
