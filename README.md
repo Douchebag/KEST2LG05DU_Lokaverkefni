@@ -52,3 +52,9 @@ usermod -a -G Manufacturing SigSte
 usermod -a -G Manufacturing SigJen
 ```
 ![usermod](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/usermod.PNG?raw=true)
+
+```
+sudo apt install samba
+nano /etc/samba/smb.conf
+```
+![samba](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/smbcnf.PNG?raw=true)
