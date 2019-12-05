@@ -235,3 +235,22 @@ apt-get install roundcube roundcube-core roundcube-mysql roundcube-plugins
 nano /etc/roundcube/config.inc.php
 ```
 ![rccnf](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/rc%20cnf.PNG?raw=true)
+```
+nano /etc/apache2/conf-enabled/roundcube.conf
+```
+![a2rc](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/a2rc.PNG?raw=true)
+
+```
+systemctl reload apache2
+```
+![](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/webmail.PNG?raw=true)
+
+```
+cd /tmp
+wget http://www.ispconfig.org/downloads/ISPConfig-3-stable.tar.gz
+tar xfz ISPConfig-3-stable.tar.gz
+cd ispconfig3_install/install/
+
+php -q install.php
+```
+![ispconfig](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/Capture.PNG?raw=true)
