@@ -14,3 +14,8 @@ nano /etc/hosts
 nano /etc/hostname
 ```
 ![hostname](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/hostname.PNG?raw=true)
+
+```
+adduser --force-badname AleRag
+```
+![adduser](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/adduser.PNG?raw=true)
