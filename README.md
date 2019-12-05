@@ -34,6 +34,21 @@ sudo groupadd Manufacturing
 ![groupadd](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/groupadd.PNG?raw=true)
 
 ```
-sudo usermod -a -G groupname username
+usermod -a -G IT AleRag
+usermod -a -G IT AndHau
+usermod -a -G Management GudSte
+usermod -a -G Management HalJon
+usermod -a -G Management HarHja
+usermod -a -G Accounting HraAra
+usermod -a -G Accounting IngGud
+usermod -a -G Manufacturing IsaLei
+usermod -a -G Manufacturing JohKri
+usermod -a -G Manufacturing JohHaf
+usermod -a -G Manufacturing KriSva
+usermod -a -G Manufacturing LarGun
+usermod -a -G Manufacturing LinMag
+usermod -a -G Manufacturing RudBjo
+usermod -a -G Manufacturing SigSte
+usermod -a -G Manufacturing SigJen
 ```
-![]()
+![usermod](https://github.com/Douchebag/KEST2LG05DU_Lokaverkefni/blob/master/myndir/usermod.PNG?raw=true)
